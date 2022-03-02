@@ -37,13 +37,13 @@ function Login() {
             <div className="login-wrap">
 	<div className="login-html">
 	
-		<label for="tab-2" class="tab">Login </label>
+		<label htmlFor="tab-2" className="tab">Login </label>
 
 		<div className="login-form">
 			<div className="sign-in-htm">
 				<div className="group">
 					<label for="user" className="label">Username</label>
-					<input id="user" name="username" type="text" class="input" required="" value={formValues.username} onChange={handleChange}></input>
+					<input id="user" name="username" type="text" className="input" required="" value={formValues.username} onChange={handleChange}></input>
 					<p>{formErrorValues.username}</p>
 				
 				</div>
@@ -54,7 +54,7 @@ function Login() {
 				</div>
 				
 				<div className="group">
-				<button className="button" value="Login " onSubmit={handleSubmit}>
+				<button className="button" value="Login " onClick={handleSubmit}>
 					Login
 					</button>
 					
